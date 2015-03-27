@@ -1,0 +1,17 @@
+Boboc Diana-Andreea 312CA
+
+Pentru rezolvarea task-ului 1 am folosit algoritmul lui Halton de
+generarea a seriei de puncte prin injumatatirea intervalului de
+cautare a punctelor pe Ox si recursiv a fiecarui interval intermediar
+obtinut.Pentru puncctele pe Oy am impartit in intervalul de cautare
+in 3 si recursiv si fiecare interval intermediar obtinut.
+
+Pentru calculul integralei prin Metoda Trapezelor am adunat aria
+fiecarui trapez format de 2 puncte consecutive de pe Ox.
+
+Pentru calculul intergalei prin metoda MonteCarlo am incadrat curba inchisa intr-un dreptunghi al caror puncte extreme sunt reprezentate de maximul si minimul atat pe OX cat si pe OY.
+Am generat in prima faza 512 de puncte aleatoare si am calculat cu 
+ajutorul functiei number cate puncte se afla in interiorul curbei inchise, aplicand metoda dreptei (even-odd rule method).
+Am calculat prima arie a curbei cu formula data si am repetat pasii de mai sus pana cand aria se apropia de cea reala ( |A(2N)-A(N)|<=tol).
+
+
